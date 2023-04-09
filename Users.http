@@ -1,0 +1,42 @@
+GET
+    http://localhost:8080/users
+####
+
+GET
+    http://localhost:8080/api/v1/users
+
+###
+
+GET
+    http://localhost:8080/api/v1/users?
+    lastname=Dagoury
+
+###
+
+GET
+    http://localhost:8080/api/v1/users?
+    email=vincent.dagoury@gmail.com
+
+###
+
+GET
+    http://localhost:8080/api/v1/users/6416f13fad6d7adf4f66f1f0
+
+
+###
+
+DELETE
+    http://localhost:8080/api/v1/users/6431a46bab494176c94a349b
+
+
+###
+POST
+    http://localhost:8080/api/v1/users
+Content-Type: application/json
+
+{
+  "firstName": "Eve",
+  "lastName": "Dagoury",
+  "email": "eve.dagoury+3@gmail.com",
+  "age": 7
+}
